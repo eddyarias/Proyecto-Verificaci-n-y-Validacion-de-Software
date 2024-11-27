@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HEditarParte">
+
+    <!-- Imagen de fondo curva roja -->
+    <ImageView
+        android:id="@+id/curva_roja_editar_parte"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/elipse_fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Título -->
+
+    <!-- Identificador Auto -->
+
+    <!-- Identificador Parte -->
+
+    <!-- Botón Verificar Parte -->
+
+    <TextView
+        android:id="@+id/txt_editar_parte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Editar Parte"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_id_auto"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:hint="Ejm: 1001"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/txt_editar_parte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_id_auto"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <EditText
+        android:id="@+id/et_id_parte"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:hint="Ejm: 10011"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_id_auto"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <Button
+        android:id="@+id/btn_verificar_parte"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#EF5120"
+        android:text="Verificar Auto y Parte"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/et_id_auto"
+        app:layout_constraintTop_toBottomOf="@id/txt_editar_parte" />
+
+    <!-- Nombre -->
+    <TextView
+        android:id="@+id/txt_nombre_parte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nombre"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/et_id_parte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_nombre_parte"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:hint="Ejm: Llanta"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_nombre_parte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <!-- Número de Serie -->
+    <TextView
+        android:id="@+id/txt_numero_serie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Número de serie"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/et_nombre_parte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_numero_serie"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:hint="Ejm: 123A456B"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_numero_serie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <!-- Fecha de Fabricación -->
+    <TextView
+        android:id="@+id/txt_fecha_fabricacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Fecha de Fabricación"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/et_numero_serie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_fecha_fabricacion"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:hint="Ejm: 15/15/2022"
+        android:inputType="date"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_fecha_fabricacion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <!-- Precio -->
+    <TextView
+        android:id="@+id/txt_precio_parte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Precio"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/et_fecha_fabricacion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_precio_parte"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:hint="Ejm: 100.00"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_precio_parte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <!-- Botón Confirmar Cambios -->
+    <Button
+        android:id="@+id/btn_confirmar_cambios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#EF5120"
+        android:text="Confirmar cambios"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_precio_parte" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

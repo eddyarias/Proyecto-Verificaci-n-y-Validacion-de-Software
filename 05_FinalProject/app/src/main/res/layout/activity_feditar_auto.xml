@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FEditarAuto">
+
+    <!-- Imagen de fondo curva roja -->
+    <ImageView
+        android:id="@+id/curva_roja_editar_auto"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/elipse_fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/txt_editar_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Editar Auto"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Identificador y Botón Verificar Auto -->
+
+    <EditText
+        android:id="@+id/et_identificador"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:hint="Ejm: 1"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/btn_verificar_auto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_editar_auto"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <!-- Marca -->
+
+    <Button
+        android:id="@+id/btn_verificar_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#EF5120"
+        android:text="Verificar Auto"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/et_identificador"
+        app:layout_constraintTop_toBottomOf="@id/txt_editar_auto" />
+
+    <TextView
+        android:id="@+id/txt_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Marca"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/et_identificador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_marca"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:hint="Ejm: Chevrolet"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_marca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <!-- Año -->
+    <TextView
+        android:id="@+id/txt_anio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Año"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/et_marca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_anio"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:hint="Ejm: 2022"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_anio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <!-- Precio -->
+    <TextView
+        android:id="@+id/txt_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Precio"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/et_anio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_precio"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/material_dynamic_neutral80"
+        android:hint="Ejm: 15000.00"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_precio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <!-- Eléctrico -->
+    <TextView
+        android:id="@+id/txt_electrico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Eléctrico si/no"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/et_precio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Switch
+        android:id="@+id/sw_electrico"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_electrico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón Confirmar Cambios -->
+    <Button
+        android:id="@+id/btn_confirmar_cambios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#EF5120"
+        android:text="Confirmar cambios"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sw_electrico" />
+
+    <TextView
+        android:id="@+id/txt_identificador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Identificador"
+        app:layout_constraintBottom_toTopOf="@+id/et_identificador"
+        app:layout_constraintEnd_toEndOf="@+id/et_identificador"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_identificador" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
